@@ -1,0 +1,5 @@
+<?php
+
+Route::module('menus');
+
+
