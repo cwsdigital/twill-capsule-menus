@@ -17,7 +17,6 @@ class MenuItem extends Model implements Sortable
 
     protected $fillable = [
         'menu_id',
-        'published',
         'title',
         'destination',
         'position',

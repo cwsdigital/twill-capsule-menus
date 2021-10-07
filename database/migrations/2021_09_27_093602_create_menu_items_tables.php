@@ -9,7 +9,7 @@ class CreateMenuItemsTables extends Migration
     {
         Schema::create('menu_items', function (Blueprint $table) {
             // this will create an id, a "published" column, and soft delete and timestamps columns
-            createDefaultTableFields($table);
+            createDefaultTableFields($table, true, false);
 
             $table->foreignId('menu_id')->constrained()->onDelete('cascade');
 

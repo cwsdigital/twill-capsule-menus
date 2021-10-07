@@ -18,7 +18,6 @@ class Menu extends Model implements Sortable
     use HasPosition;
 
     protected $fillable = [
-        'published',
         'title',
         'position',
     ];
@@ -37,16 +36,5 @@ class Menu extends Model implements Sortable
         return $this->hasMany(MenuItem::class);
     }
 
-    // Menus are considered published by default
-    public function getPublishedAttribute()
-    {
-        return true;
-    }
-
-    // Published by default, so remove any possibility of controlling the publish status
-    public function getCanPublishAttribute()
-    {
-        return false;
-    }
 
 }

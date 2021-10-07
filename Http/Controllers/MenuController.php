@@ -8,7 +8,7 @@ class MenuController extends ModuleController
 {
     protected $moduleName = 'menus';
 
-    protected $defaultIndexOptions = [
+    protected $indexOptions = [
         'create' => true,
         'edit' => true,
         'publish' => false, //we treat menus as published by default, setting this to false disallows the us for changing publish status
