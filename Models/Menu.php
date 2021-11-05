@@ -34,7 +34,7 @@ class Menu extends Model implements Sortable
 
     public function menu_items()
     {
-        return $this->hasMany(MenuItem::class);
+        return $this->hasMany(MenuItem::class)->ordered();
     }
 
     // Menus are considered published by default
